@@ -1,223 +1,417 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blackyard - Engineering Security. Fortifying the Future. Defense solutions and industrial resilience for the modern era.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blackyard - Engineering Security. Fortifying the Future. Defense solutions and industrial resilience for the modern era."
+    />
     <title>Blackyard | Defense & Industrial Engineering</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&family=Orbitron:wght@700;900&subset=latin,latin-ext&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="./assets/blackyard-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Animated Background -->
     <canvas id="background-canvas"></canvas>
 
     <!-- Header -->
     <header id="header">
-        <div class="container header-content">
-            <div class="logo">
-                <span class="logo-text">BLACKYARD</span>
-            </div>
-            
-            <!-- Language Toggle -->
-            <div class="lang-toggle">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <span class="lang-separator">|</span>
-                <button class="lang-btn" data-lang="az">AZ</button>
-            </div>
+      <div class="container header-content">
+        <a href="#home" class="logo">
+          <img src="./assets/blackyard-logo.png" class="logo-img" />
+          <span class="logo-text">BLACKYARD</span>
+        </a>
 
-            <!-- Navigation -->
-            <nav class="nav-desktop">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">Who We Are</a>
-                <a href="#capabilities" class="nav-link">Capabilities</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-
-            <!-- Mobile Menu Toggle -->
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <!-- Language Toggle -->
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-btn" data-lang="az">AZ</button>
         </div>
 
-        <!-- Mobile Navigation -->
-        <nav class="nav-mobile" id="nav-mobile">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">Who We Are</a>
-            <a href="#capabilities" class="nav-link">Capabilities</a>
-            <a href="#contact" class="nav-link">Contact</a>
+        <!-- Navigation -->
+        <nav class="nav-desktop">
+          <a href="#home" class="nav-link" data-en="Home" data-az="Ana Səhifə"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="nav-link"
+            data-en="Who We Are"
+            data-az="Biz Kimik"
+            >Who We Are</a
+          >
+          <a
+            href="#capabilities"
+            class="nav-link"
+            data-en="Capabilities"
+            data-az="İmkanlar"
+            >Capabilities</a
+          >
+          <a href="#contact" class="nav-link" data-en="Contact" data-az="Əlaqə"
+            >Contact</a
+          >
         </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="nav-mobile" id="nav-mobile">
+        <a href="#home" class="nav-link" data-en="Home" data-az="Ana Səhifə"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="nav-link"
+          data-en="Who We Are"
+          data-az="Biz Kimik"
+          >Who We Are</a
+        >
+        <a
+          href="#capabilities"
+          class="nav-link"
+          data-en="Capabilities"
+          data-az="İmkanlar"
+          >Capabilities</a
+        >
+        <a href="#contact" class="nav-link" data-en="Contact" data-az="Əlaqə"
+          >Contact</a
+        >
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title" data-en="ENGINEERING SECURITY. FORTIFYING THE FUTURE." data-az="TƏHLÜKƏSİZLİK MÜHƏNDİSLİYİ. GƏLƏCƏYİ MÖHKƏMLƏNDİRİRİK.">
-                ENGINEERING SECURITY. FORTIFYING THE FUTURE.
-            </h1>
-            <p class="hero-subtitle" data-en="Defensive solutions and industrial resilience for the modern era." data-az="Müasir dövr üçün müdafiə həlləri və sənaye dayanıqlılığı.">
-                Defensive solutions and industrial resilience for the modern era.
-            </p>
-            <a href="#about" class="hero-cta">EXPLORE</a>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1
+          class="hero-title"
+          data-en="ENGINEERING SECURITY. FORTIFYING THE FUTURE."
+          data-az="TƏHLÜKƏSİZLİK MÜHƏNDİSLİYİ. GƏLƏCƏYİ MÖHKƏMLƏNDİRİRİK."
+        >
+          ENGINEERING SECURITY. FORTIFYING THE FUTURE.
+        </h1>
+        <p
+          class="hero-subtitle"
+          data-en="Defensive solutions and industrial resilience for the modern era."
+          data-az="Müasir dövr üçün müdafiə həlləri və sənaye dayanıqlılığı."
+        >
+          Defensive solutions and industrial resilience for the modern era.
+        </p>
+        <a href="#about" class="hero-cta">EXPLORE</a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal" data-en="WHO WE ARE" data-az="BİZ KİMİK">WHO WE ARE</h2>
-                <div class="title-underline"></div>
-            </div>
-            
-            <div class="about-content reveal">
-                <p class="about-text" data-en="Born from the heritage of the Karabakh, Blackyard merges ancestral strength with modern engineering. We are an industrial defense technology enterprise focused on sovereignty, safety, and the development of indigenous strategic capabilities." data-az="Qarabağ irsindən doğan "Blackyard", əcdadların gücünü müasir mühəndisliklə birləşdirir. Biz suverenlik, təhlükəsizlik və yerli strateji potensialın inkişafına yönəlmiş sənaye-müdafiə texnologiyaları şirkətiyik.">
-                    Born from the heritage of the Karabakh, Blackyard merges ancestral strength with modern engineering. We are an industrial defense technology enterprise focused on sovereignty, safety, and the development of indigenous strategic capabilities.
-                </p>
-            </div>
-
-            <div class="mission-vision">
-                <div class="mission-card reveal">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                    </div>
-                    <h3 class="card-title" data-en="MISSION" data-az="MİSSİYA">MISSION</h3>
-                    <p class="card-text" data-en="To provide state-of-the-art protective systems and defensive infrastructure that ensure the safety of personnel and the integrity of critical assets." data-az="Şəxsi heyətin təhlükəsizliyini və strateji obyektlərin toxunulmazlığını təmin edən ən müasir mühafizə sistemləri və müdafiə infrastrukturu təmin etmək.">
-                        To provide state-of-the-art protective systems and defensive infrastructure that ensure the safety of personnel and the integrity of critical assets.
-                    </p>
-                </div>
-
-                <div class="vision-card reveal">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M2 12h20"/>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                        </svg>
-                    </div>
-                    <h3 class="card-title" data-en="VISION" data-az="VİZYON">VISION</h3>
-                    <p class="card-text" data-en="To establish a self-reliant national defense industry standard, characterised by impenetrable quality and technological superiority." data-az="Sarsılmaz keyfiyyət və texnoloji üstünlüklə xarakterizə olunan, özünü təmin edən milli müdafiə sənayesi standartını formalaşdırmaq.">
-                        To establish a self-reliant national defense industry standard, characterised by impenetrable quality and technological superiority.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2
+            class="section-title reveal"
+            data-en="WHO WE ARE"
+            data-az="BİZ KİMİK"
+          >
+            WHO WE ARE
+          </h2>
+          <div class="title-underline"></div>
         </div>
+
+        <div class="about-content reveal">
+          <p
+            class="about-text"
+            data-en="Born from the heritage of the Karabakh, Blackyard merges ancestral strength with modern engineering. We are an industrial defense technology enterprise focused on sovereignty, safety, and the development of indigenous strategic capabilities."
+            data-az="Qarabağ irsindən doğan Blackyard, əcdadların gücünü müasir mühəndisliklə birləşdirir. Biz suverenlik, təhlükəsizlik və yerli strateji potensialın inkişafına yönəlmiş sənaye-müdafiə texnologiyaları şirkətiyik."
+          >
+            Born from the heritage of the Karabakh, Blackyard merges ancestral
+            strength with modern engineering. We are an industrial defense
+            technology enterprise focused on sovereignty, safety, and the
+            development of indigenous strategic capabilities.
+          </p>
+        </div>
+
+        <div class="mission-vision">
+          <div class="mission-card reveal">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 class="card-title" data-en="MISSION" data-az="MİSSİYA">
+              MISSION
+            </h3>
+            <p
+              class="card-text"
+              data-en="To provide state-of-the-art protective systems and defensive infrastructure that ensure the safety of personnel and the integrity of critical assets."
+              data-az="Şəxsi heyətin təhlükəsizliyini və strateji obyektlərin toxunulmazlığını təmin edən ən müasir mühafizə sistemləri və müdafiə infrastrukturu təmin etmək."
+            >
+              To provide state-of-the-art protective systems and defensive
+              infrastructure that ensure the safety of personnel and the
+              integrity of critical assets.
+            </p>
+          </div>
+
+          <div class="vision-card reveal">
+            <div class="card-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-title" data-en="VISION" data-az="VİZYON">VISION</h3>
+            <p
+              class="card-text"
+              data-en="To establish a self-reliant national defense industry standard, characterised by impenetrable quality and technological superiority."
+              data-az="Sarsılmaz keyfiyyət və texnoloji üstünlüklə xarakterizə olunan, özünü təmin edən milli müdafiə sənayesi standartını formalaşdırmaq."
+            >
+              To establish a self-reliant national defense industry standard,
+              characterised by impenetrable quality and technological
+              superiority.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Capabilities Section -->
     <section id="capabilities" class="capabilities">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal" data-en="CAPABILITIES" data-az="İMKANLAR">CAPABILITIES</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="capabilities-grid">
-                <div class="capability-card reveal">
-                    <div class="capability-number">01</div>
-                    <h3 class="capability-title" data-en="MISSION-CRITICAL SYSTEMS ENGINEERING" data-az="HƏYATİ ƏHƏMİYYƏTLİ SİSTEM MÜHƏNDİSLİYİ">
-                        MISSION-CRITICAL SYSTEMS ENGINEERING
-                    </h3>
-                    <p class="capability-text" data-en="Development of resilient mechanical architectures and specialised infrastructure designed for survivability and operational dominance in hostile environments." data-az="Aqressiv mühitlərdə dayanıqlılıq və əməliyyat üstünlüyü üçün nəzərdə tutulmuş möhkəm mexaniki arxitekturaların və xüsusi infrastrukturun layihələndirilməsi.">
-                        Development of resilient mechanical architectures and specialised infrastructure designed for survivability and operational dominance in hostile environments.
-                    </p>
-                </div>
-
-                <div class="capability-card reveal">
-                    <div class="capability-number">02</div>
-                    <h3 class="capability-title" data-en="DEFENCE-GRADE MANUFACTURING" data-az="MÜDAFİƏ TƏYİNATLI İSTEHSALAT">
-                        DEFENCE-GRADE MANUFACTURING
-                    </h3>
-                    <p class="capability-text" data-en="Precision fabrication of heavy-duty assemblies and components engineered to withstand extreme kinetic stress and environmental demands." data-az="Ekstremal kinetik gərginliyə və ətraf mühit tələblərinə tab gətirmək üçün mühəndisliyi hesablanmış ağır tonnajlı qovşaqların və komponentlərin dəqiq istehsalı.">
-                        Precision fabrication of heavy-duty assemblies and components engineered to withstand extreme kinetic stress and environmental demands.
-                    </p>
-                </div>
-
-                <div class="capability-card reveal">
-                    <div class="capability-number">03</div>
-                    <h3 class="capability-title" data-en="PROTECTIVE MATERIAL SCIENCE" data-az="QORUYUCU MATERİAL ELMİ">
-                        PROTECTIVE MATERIAL SCIENCE
-                    </h3>
-                    <p class="capability-text" data-en="Advanced R&D into high-integrity composites and alloys focused on maximum durability and structural safety for strategic applications." data-az="Strateji tətbiqlər üçün maksimum davamlılıq və struktur təhlükəsizliyinə fokuslanan yüksək bütövlüyə malik kompozitlərin və ərintilərin qabaqcıl tədqiqatı.">
-                        Advanced R&D into high-integrity composites and alloys focused on maximum durability and structural safety for strategic applications.
-                    </p>
-                </div>
-
-                <div class="capability-card reveal">
-                    <div class="capability-number">04</div>
-                    <h3 class="capability-title" data-en="STRATEGIC OPERATIONAL READINESS" data-az="STRATEJİ ƏMƏLİYYAT HAZIRLIĞI">
-                        STRATEGIC OPERATIONAL READINESS
-                    </h3>
-                    <p class="capability-text" data-en="Delivery of secure technical infrastructure and field-support solutions to ensure continuity in high-stakes security scenarios." data-az="Yüksək riskli təhlükəsizlik ssenarilərində fəaliyyət davamlılığını təmin etmək üçün təhlükəsiz texniki infrastrukturun və səhra dəstəyi həllərinin təmin edilməsi.">
-                        Delivery of secure technical infrastructure and field-support solutions to ensure continuity in high-stakes security scenarios.
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2
+            class="section-title reveal"
+            data-en="CAPABILITIES"
+            data-az="İMKANLAR"
+          >
+            CAPABILITIES
+          </h2>
+          <div class="title-underline"></div>
         </div>
+
+        <div class="capabilities-grid">
+          <div class="capability-card reveal">
+            <div class="capability-image">
+              <img
+                src="./assets/capability-3.png"
+                alt="Mission-Critical Systems"
+              />
+            </div>
+            <div class="capability-body">
+              <h3
+                class="capability-title"
+                data-en="MISSION-CRITICAL SYSTEMS ENGINEERING"
+                data-az="HƏYATİ ƏHƏMİYYƏTLİ SİSTEM MÜHƏNDİSLİYİ"
+              >
+                MISSION-CRITICAL SYSTEMS ENGINEERING
+              </h3>
+              <p
+                class="capability-text"
+                data-en="We design and develop resilient mechanical architectures and specialised infrastructure built to perform under extreme pressure. Our systems are engineered for survivability, reliability, and operational dominance across the most hostile and unpredictable environments."
+                data-az="Biz həyati əhəmiyyətli mexaniki arxitekturalar və xüsusi infrastruktur layihələndiririk. Sistemlərimiz ən ağır və gözlənilməz şəraitdə belə yüksək etibarlılıq, dayanıqlılıq və əməliyyat üstünlüyü təmin etmək üçün hazırlanmışdır."
+              >
+                We design and develop resilient mechanical architectures and
+                specialised infrastructure built to perform under extreme
+                pressure. Our systems are engineered for survivability,
+                reliability, and operational dominance across the most hostile
+                and unpredictable environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-card reveal">
+            <div class="capability-body">
+              <h3
+                class="capability-title"
+                data-en="DEFENCE-GRADE MANUFACTURING"
+                data-az="MÜDAFİƏ TƏYİNATLI İSTEHSALAT"
+              >
+                DEFENCE-GRADE MANUFACTURING
+              </h3>
+              <p
+                class="capability-text"
+                data-en="Our manufacturing processes deliver precision-fabricated heavy-duty assemblies and components built to withstand extreme kinetic stress, ballistic impact, and harsh environmental conditions. Every unit is produced to the strictest defence-grade quality standards."
+                data-az="İstehsal proseslərimiz ekstremal kinetik gərginliyə, balistik təsirə və ağır ətraf mühit şəraitinə dözümlü, dəqiqliklə hazırlanmış ağır qovşaqlar və komponentlər təqdim edir. Hər vahid ən ciddi müdafiə keyfiyyəti standartlarına uyğun istehsal olunur."
+              >
+                Our manufacturing processes deliver precision-fabricated
+                heavy-duty assemblies and components built to withstand extreme
+                kinetic stress, ballistic impact, and harsh environmental
+                conditions. Every unit is produced to the strictest
+                defence-grade quality standards.
+              </p>
+            </div>
+            <div class="capability-image">
+              <img
+                src="./assets/capability-4.png"
+                alt="Mission-Critical Systems"
+              />
+            </div>
+          </div>
+
+          <div class="capability-card reveal">
+            <div class="capability-image">
+              <img
+                src="./assets/capability-1.png"
+                alt="Mission-Critical Systems"
+              />
+            </div>
+            <div class="capability-body">
+              <h3
+                class="capability-title"
+                data-en="PROTECTIVE MATERIAL SCIENCE"
+                data-az="QORUYUCU MATERİAL ELMİ"
+              >
+                PROTECTIVE MATERIAL SCIENCE
+              </h3>
+              <p
+                class="capability-text"
+                data-en="We conduct advanced research and development into high-integrity composites, armour-grade alloys, and next-generation protective materials. Our focus is on achieving maximum structural durability and safety performance across a wide range of strategic applications."
+                data-az="Yüksək bütövlüklü kompozitlər, zirehli ərintilər və yeni nəsil qoruyucu materiallar üzrə qabaqcıl tədqiqat və inkişaf işləri aparırıq. Məqsədimiz geniş strateji tətbiqlərdə maksimum struktur davamlılığı və təhlükəsizlik performansına nail olmaqdır."
+              >
+                We conduct advanced research and development into high-integrity
+                composites, armour-grade alloys, and next-generation protective
+                materials. Our focus is on achieving maximum structural
+                durability and safety performance across a wide range of
+                strategic applications.
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-card reveal">
+            <div class="capability-body">
+              <h3
+                class="capability-title"
+                data-en="STRATEGIC OPERATIONAL READINESS"
+                data-az="STRATEJİ ƏMƏLİYYAT HAZIRLIĞI"
+              >
+                STRATEGIC OPERATIONAL READINESS
+              </h3>
+              <p
+                class="capability-text"
+                data-en="We deliver secure technical infrastructure and comprehensive field-support solutions designed to maintain operational continuity in high-stakes security scenarios. Our readiness frameworks ensure rapid deployment, sustained performance, and zero tolerance for system failure."
+                data-az="Yüksək riskli təhlükəsizlik ssenarilərində əməliyyat davamlılığını qorumaq üçün təhlükəsiz texniki infrastruktur və hərtərəfli səhra dəstəyi həlləri təqdim edirik. Hazırlıq çərçivələrimiz sürətli yerləşdirməni, davamlı performansı və sistem uğursuzluğuna sıfır tolerantlığı təmin edir."
+              >
+                We deliver secure technical infrastructure and comprehensive
+                field-support solutions designed to maintain operational
+                continuity in high-stakes security scenarios. Our readiness
+                frameworks ensure rapid deployment, sustained performance, and
+                zero tolerance for system failure.
+              </p>
+            </div>
+            <div class="capability-image">
+              <img
+                src="./assets/capability-2.png"
+                alt="Mission-Critical Systems"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title reveal" data-en="CONTACT" data-az="ƏLAQƏ">CONTACT</h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="contact-content reveal">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <a href="tel:+994507607076" class="contact-link">+994 50 760 70 76</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <a href="mailto:info@blackyard.az" class="contact-link">info@blackyard.az</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                        </div>
-                        <span class="contact-text">Baku, Azerbaijan</span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title reveal" data-en="CONTACT" data-az="ƏLAQƏ">
+            CONTACT
+          </h2>
+          <div class="title-underline"></div>
         </div>
+
+        <div class="contact-content reveal">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <a href="tel:+994507607076" class="contact-link"
+                >+994 50 760 70 76</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <a href="mailto:info@blackyard.az" class="contact-link"
+                >info@blackyard.az</a
+              >
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <span class="contact-text">Baku, Azerbaijan</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p class="footer-text">&copy; 2026 Blackyard. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p class="footer-text">&copy; 2026 Blackyard. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
