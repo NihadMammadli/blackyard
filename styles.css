@@ -45,6 +45,8 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-bg);
 }
 
 body {
@@ -646,6 +648,14 @@ section {
 
     .capability-image {
         min-height: 200px;
+    }
+
+    .capability-card .capability-body {
+       order: 1;
+    }
+
+    .capability-card .capability-image {
+        order: 2;
     }
 }
 
